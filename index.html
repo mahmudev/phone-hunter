@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Phone Hunter</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" /> </head>
+
+<body>
+	<header>
+  <!-- navbar and menu -->
+  <nav class="shadow">
+
+	<div class="flex justify-between items-center py-6 px-10 container mx-auto">
+  
+	  <div>
+		<h1 class="text-2xl font-bold bg-gradient-to-tr from-indigo-600 to-green-600 bg-clip-text text-transparent hover:cursor-pointer">Phone Hunter</h1>
+	  </div>
+  
+	  <div>
+		
+		<div class="hover:cursor-pointer sm:hidden">
+		  <spnan class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-tr from-indigo-600 to-green-600"></spnan>
+		  <spnan class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-tr from-indigo-600 to-green-600"></spnan>
+		  <spnan class="h-1 rounded-full block w-8 mb-1 bg-gradient-to-tr from-indigo-600 to-green-600"></spnan>
+		</div>
+		<div class="flex items-center">
+  
+		  <ul class="sm:flex space-x-4 hidden items-center">
+			<li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Home</a></li>
+			<li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">About</a></li>
+			<li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Services</a></li>
+			<li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Products</a></li>
+			<li><a href="#" class="text-gray-700 hover:text-indigo-600 text-md ">Contact</a></li>
+		  </ul>
+  
+		  <div class="md:flex items-center hidden space-x-4 ml-8 lg:ml-12">
+			<h1 class="text-text-gray-600  py-2 hover:cursor-pointer hover:text-indigo-600">LOGIN</h1>
+			<h1 class="text-text-gray-600  py-2 hover:cursor-pointer px-4 rounded text-white bg-gradient-to-tr from-indigo-600 to-green-600 hover:shadow-lg">SIGNUP</h1>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</nav>
+	</header>
+	<main>
+		<!-- section hero -->
+		<section class="bg-gray-100 sm:grid grid-cols-5 px-4 py-6 min-h-full lg:min-h-screen space-y-6 sm:space-y-0 sm:gap-4">
+			
+		
+			<div class="col-span-4 lg:px-10">
+				<div id="phones-container" class="grid grid-flow-row gap-5 text-neutral-600 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"></div>
+			</div>
+			<div class="h-96 col-span-1 ">
+			  <div class="bg-white py-3 px-4 rounded-lg flex justify-around items-center ">
+			   <input id="search-field"type="text" placeholder="seach" class=" bg-gray-100 rounded-md  outline-none pl-2 ring-indigo-700 w-full mr-2 p-2">
+			  <span id="btn-search"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor ">
+			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+				</svg></span>
+			  </div>
+			  <div class="bg-white  rounded-md">
+		
+			  <h1 class="text-center text-xl my-4  bg-white py-2 rounded-md border-b-2 cursor-pointer  text-gray-600">Service</h1>
+			  <div class="bg-white rounded-md list-none  text-center ">
+				<li class="py-3 border-b-2"><a href="#" class="list-none  hover:text-indigo-600">Products</a></li>
+				<li class="py-3 border-b-2"><a href="#" class="list-none  hover:text-indigo-600">Models</a></li>
+				<li class="py-3 border-b-2"><a href="#" class="list-none  hover:text-indigo-600">Pricing</a></li>
+				<li class="py-3 border-b-2"><a href="#" class="list-none  hover:text-indigo-600">Hire</a></li>
+				<li class="py-3 "><a href="#" class="list-none border-b-2 hover:text-indigo-600">Business</a></li>
+			  </div>
+			  </div>
+			</div>
+			
+		
+		  </section>
+	</main>
+	<footer class="mx-auto bg-indigo-100 py-16 text-base-content">
+		<div class="container mx-auto footer p-10">
+			<div> <span class="footer-title">Home</span> <a class="link link-hover">Features</a> <a class="link link-hover">Pricing</a> <a class="link link-hover">FAQs</a> <a class="link link-hover">About</a> </div>
+			<div> <span class="footer-title">UIUX Design</span> <a class="link link-hover">Product Design</a> <a class="link link-hover">Back End Developer</a> <a class="link link-hover">Front End Developer</a> </div>
+			<div> <span class="footer-title">FAQ</span> <a class="link link-hover">Support</a> <a class="link link-hover">Privacy policy</a> <a class="link link-hover">Terms of Service</a> </div>
+			<div> <span class="footer-title">Subscribe to our newsletter</span>
+				<div class="form-control w-80">
+					<label class="label"> <span class="label-text">There are many variations of passages of available, but the
+                majority have suffered</span
+              >
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered rounded w-full pr-16"
+              />
+              <button
+                class="btn btn-primary bg-[#FFC107] text-black absolute top-0 right-0 rounded-l-none hover:bg-gray-500 hover:text-white"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
